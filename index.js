@@ -73,7 +73,7 @@ const driver = v1.driver(
 );
 
 const resolvers = {
-  Query:{
+  Query: {
     getMovies: () => {
       return new Promise((resolve) => {
         const newMovieTimes = [];
@@ -90,7 +90,8 @@ const resolvers = {
                 })
               })
             );
-          }).then(() => {
+          })
+          .then(() => {
             return new Promise((resolve) => {
               newMovieTimes.sort((m1, m2) => m1.time > m2.time);
               resolve()
@@ -105,7 +106,7 @@ const resolvers = {
 };
 
 const schema = makeAugmentedSchema({
-  typeDefs,config: {
+  typeDefs, config: {
     query: {
       exclude: ["MovieTime"]
     },
@@ -116,8 +117,6 @@ const schema = makeAugmentedSchema({
 
 
 const {ApolloServer} = require('apollo-server');
-
-
 
 const server = new ApolloServer({schema, context: {driver}});
 
