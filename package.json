@@ -1,0 +1,28 @@
+{
+  "name": "graphql-tool-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/mjcarter/graphql-tool-talk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/mjcarter/graphql-tool-talk/issues"
+  },
+  "homepage": "https://gitlab.com/mjcarter/graphql-tool-talk#readme",
+  "dependencies": {
+    "apollo-server": "^2.9.9",
+    "casual": "^1.6.2",
+    "mysql2": "^2.0.0",
+    "neo4j-driver": "^1.7.6",
+    "neo4j-graphql-js": "^2.9.3",
+    "sequelize": "^5.21.2"
+  }
+}
