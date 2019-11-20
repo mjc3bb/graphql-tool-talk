@@ -84,7 +84,7 @@ const resolvers = {
                   const session = driver.session();
                   session.run('match (m:Movie {movieId:$movieId}) return m;', {movieId: movieTime.movieId})
                     .then((result) => result.records[0]._fields[0].properties)
-                    .then((movie) => newMovieTimes.push({time: movieTime.movieTime, movie}))
+                    .then((movie) => newMovieTimes.push({time: movieTime.movieTime, movie, location: "AMC Statesboro"}))
                     .then(() => session.close())
                     .then(() => resolve());
                 })
