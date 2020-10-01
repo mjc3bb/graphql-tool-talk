@@ -18,7 +18,7 @@
   },
   "homepage": "https://gitlab.com/mjcarter/graphql-tool-talk#readme",
   "dependencies": {
-    "apollo-server": "^2.9.9",
+    "apollo-server": "^2.14.2",
     "casual": "^1.6.2",
     "mysql2": "^2.0.0",
     "neo4j-driver": "^1.7.6",
